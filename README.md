@@ -11,3 +11,5 @@ This repo uses yarn modern. To get started:
 5. `node ./dist/bundle.js`
 
 You should see `src_someOtherFunction` is not a function at this point. This is because I destructured it from a named import of one of the packages in the workspaces. If you remove `sideEffects: false` from the webpack config in this repo, things will work. Also, keep that line intact and link webpack with `yarn link ../webpack` (or whatever directory you have the webpack repo installed), and then change `canMangle` to `false`, then this project will be bundled correctly and you will not see any errors.
+
+Note: I created a few workspaces to act as "packages" to "import", but the gist of where the issue lies can be found in `src/index.js`
