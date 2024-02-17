@@ -1,0 +1,8 @@
+{
+  "name": "package-b",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel --verbose --config-file ../../babel.config.js src -d lib --extensions \".ts,.tsx,.js,.jsx\" --source-maps inline"
+  }
+}

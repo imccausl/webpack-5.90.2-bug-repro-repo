@@ -1,4 +1,31 @@
 {
   "name": "webpack_bug_repro-repo",
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build:packages": "yarn workspaces foreach --all run build",
+    "compile": "webpack --config ./packages/package-a/webpack.config.js"
+  },
+  "dependencies": {
+    "package-a": "*",
+    "package-b": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/plugin-transform-class-properties": "^7.23.3",
+    "@babel/plugin-transform-private-methods": "^7.23.3",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/babel__core": "^7",
+    "@types/babel__preset-env": "^7",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "resolutions": {
+    "webpack": "portal:/Users/imccausl/code/webpack"
+  }
 }
