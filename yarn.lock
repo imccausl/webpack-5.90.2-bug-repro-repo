@@ -3838,9 +3838,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@portal:/Users/imccausl/code/webpack::locator=webpack_bug_repro-repo%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "webpack@portal:/Users/imccausl/code/webpack::locator=webpack_bug_repro-repo%40workspace%3A."
+"webpack@npm:^5.90.2":
+  version: 5.90.2
+  resolution: "webpack@npm:5.90.2"
   dependencies:
     "@types/eslint-scope": "npm:^3.7.3"
     "@types/estree": "npm:^1.0.5"
@@ -3871,8 +3871,9 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
+  checksum: 10c0/8ade2720dd91b6bcfa22ff4fabfeef474c9ab4cf716c4b6501dc0b0b1dfcaedb54d50f71b9e643c0e831f0996f0d8c1fc23d3faf9fb2d860c04b3b843358704e
   languageName: node
-  linkType: soft
+  linkType: hard
 
 "webpack_bug_repro-repo@workspace:.":
   version: 0.0.0-use.local
